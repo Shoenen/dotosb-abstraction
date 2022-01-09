@@ -1,46 +1,46 @@
-function addScale(sprite, easing, timings, sizes){
+function addScale(sprite, timings, sizes, easing=easings.linear){
     sprite.add('S', 
     timings, 
     sizes,
     easingMap.get(easing))
 }
 
-function addFade(sprite, easing, timings, fadeValues){
+function addFade(sprite, timings, fadeValues, easing=easings.linear){
     sprite.add('F',
     timings,
     fadeValues,
     easingMap.get(easing))
 }
 
-function addRotate(sprite, easing, timings, rotationalValues){
+function addRotate(sprite, timings, rotationalValues, easing=easings.linear){
     sprite.add('R',
     timings,
     rotationalValues,
     easingMap.get(easing))
 }
 
-function addMoveY(sprite, easing, timings, moveValues){
+function addMoveY(sprite, timings, moveValues, easing=easings.linear){
     sprite.add('MY',
     timings,
     moveValues,
     easingMap.get(easing))
 }
 
-function addMoveX(sprite, easing, timings, moveValues){
+function addMoveX(sprite, timings, moveValues, easing=easings.linear){
     sprite.add('MX',
     timings,
     moveValues,
     easingMap.get(easing))
 }
 
-function addMove(sprite, easing, timings, moveValues){
+function addMove(sprite, timings, moveValues, easing=easings.linear){
     sprite.add('M',
     timings,
     moveValues,
     easingMap.get(easing))
 }
 
-function addColor(sprite, easing, timings, RgbValues){
+function addColor(sprite, timings, RgbValues, easing=easings.linear){
     sprite.add('C',
     timings,
     RgbValues,
