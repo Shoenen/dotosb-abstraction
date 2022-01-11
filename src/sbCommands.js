@@ -194,7 +194,7 @@ export function addMoveYInLoop(timings, moveValues, easing=easings.linear){
  * @returns {NewEvent} The generated loop event
  */
 export function addMoveXInLoop(timings, moveValues, easing=easings.linear){
-    newEvent('MX',
+    return newEvent('MX',
     timings, 
     moveValues,
     easingMap.get(easing))
