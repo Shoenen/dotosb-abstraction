@@ -8,8 +8,7 @@
  export class SpriteWrapper extends Sprite{
      constructor(storyboard, path, options) {
          super(path, options);
-         this.storyboard=storyboard;
-         storyboard.layers.get(options?.layer ?? "Background").push(this);        
+         storyboard.addSprite(this);
      }
  
      /**
